@@ -10,21 +10,21 @@ module axi_stream_insert_header
 	input 			rst_n,
 	// AXI Stream input original data
 	input 							valid_in,
-	input 	[DATA_WD-1 : 0] 		data_in,
-	input 	[DATA_BYTE_WD-1 : 0] 	keep_in,
+	input 	[DATA_WD-1 : 0] 				data_in,
+	input 	[DATA_BYTE_WD-1 : 0] 				keep_in,
 	input 							last_in,
 	output 							ready_in,
 	// AXI Stream output with header inserted
 	output 							valid_out,
-	output 	[DATA_WD-1 : 0] 		data_out,
-	output 	[DATA_BYTE_WD-1 : 0] 	keep_out,
+	output 	[DATA_WD-1 : 0] 				data_out,
+	output 	[DATA_BYTE_WD-1 : 0] 				keep_out,
 	output 							last_out,
 	input 							ready_out,
 	// The header to be inserted to AXI Stream input
 	input 							valid_insert,
-	input 	[DATA_WD-1 : 0] 		data_insert,
-	input 	[DATA_BYTE_WD-1 : 0] 	keep_insert,
-	input	[BYTE_CNT_WD-1 : 0]		byte_insert_cnt,
+	input 	[DATA_WD-1 : 0] 				data_insert,
+	input 	[DATA_BYTE_WD-1 : 0] 				keep_insert,
+	input	[BYTE_CNT_WD-1 : 0]				byte_insert_cnt,
 	output 							ready_insert
 );
 
